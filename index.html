@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Task</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <main class="container">
+        <h1 id="heading">Quick Task</h1>
+      <div class="to-do">
+   <section class="input-area">
+        <h3 class="input-heading">Title</h3>
+        <input id="title" class="input-content" placeholder="Enter task here" type="text"><br>
+        <div class="input-handle">
+        <h3 class="input-heading">Deadline</h3>
+        <input placeholder="Deadline" id="deadline" class="input-content"  type="datetime-local"><br>
+         <h3 class="input-heading">Priority</h3>
+         <select id="priority" class="input-content" title="priority">
+            <option value="Select Priority" disabled selected>Select Priority</option>
+            <option value="Normal">Normal</option>
+            <option value="Important">Important</option>
+         </select><br>
+         </div>
+         <div class="btn"><button type="button" id="submit-task">Submit</button></div>
+         
+        </section>
+    <section class="task-list">
+        <div class="tasks-box">
+       <h2>Tasks To Do</h2>
+<ul class="tasks">
+</ul>
+        </div>
+    </section>
+    <section class="timer-section">
+        <h2>Pomodoro Focus Timer</h2>
+        <div class="timer-display">Time left: <span id="duration"></span></div>
+        <div class="timer-buttons">
+            <button id="start-timer" class="timer-btn">Start Timer</button>
+            <button id="stop-timer" class="timer-btn">Stop Timer</button>
+            <button id="reset-timer" class="timer-btn">Reset timer</button>
+        </div>
+    </section>
+    </div>  
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
